@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Task App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="daftar_peserta">Daftar Peserta</string>
+    <string name="daftar_kegiatan">Daftar Kegiatan -</string>
+    <string name="senin_19_desember_2022">Senin, 19 Desember 2022</string>
+    <string name="helpers">-</string>
+    <string name="pop_up">PopUp</string>
+    <string name="nama_peserta">Nama Peserta</string>
+    <string name="nama_kegiatan">Nama Kegiatan</string>
+    <string name="simpan">Simpan</string>
+    <string name="peserta">Peserta</string>
+    <string name="setting">Setting</string>
+    <string name="participant">Participant</string>
+    <string name="your_date">your date</string>
+</resources>

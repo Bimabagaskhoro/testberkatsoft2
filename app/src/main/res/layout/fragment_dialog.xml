@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    tools:ignore="RtlHardcoded"
+    tools:context=".ui.task.DialogAddFragment">
+
+    <TextView
+        android:id="@+id/tv_helper_pop_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_700"
+        android:text="@string/pop_up"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/btn_close_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_helper_pop_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_helper_pop_up"
+        app:srcCompat="@drawable/ic_close" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_helper_pop_up">
+
+        <TextView
+            android:id="@+id/tv_helper_peserta_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_500"
+            android:text="@string/nama_peserta"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/edt_nama_peserta_popup"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_nama_peserta_popup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_input"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="6dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_helper_peserta_popup" />
+
+        <TextView
+            android:id="@+id/tv_helper_kegiatan_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/roboto_500"
+            android:text="@string/nama_kegiatan"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_helper_peserta_popup"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama_peserta_popup" />
+
+        <EditText
+            android:id="@+id/edt_nama_kegiatan_popup"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/edit_input"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="text"
+            android:padding="6dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/edt_nama_peserta_popup"
+            app:layout_constraintTop_toBottomOf="@+id/tv_helper_kegiatan_popup" />
+
+        <ImageView
+            android:id="@+id/btn_calender"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_date"
+            app:layout_constraintStart_toStartOf="@+id/edt_nama_kegiatan_popup"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama_kegiatan_popup" />
+
+        <TextView
+            android:id="@+id/tv_result_calender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto_300"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/btn_calender"
+            app:layout_constraintTop_toBottomOf="@+id/btn_calender"
+            android:text="@string/your_date" />
+
+        <ImageView
+            android:id="@+id/btn_time_start"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/icon_time_start"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_calender"
+            app:layout_constraintStart_toEndOf="@+id/tv_result_calender"
+            app:layout_constraintTop_toTopOf="@+id/btn_calender" />
+
+        <TextView
+            android:id="@+id/tv_result_time_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_300"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_time_start"
+            app:layout_constraintStart_toEndOf="@+id/btn_time_start"
+            app:layout_constraintTop_toTopOf="@+id/btn_time_start"
+            tools:text="09.00" />
+
+        <ImageView
+            android:id="@+id/btn_time_end"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/icon_time_stop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_time_start"
+            app:layout_constraintTop_toBottomOf="@+id/btn_time_start" />
+
+        <TextView
+            android:id="@+id/tv_result_time_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_300"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_time_end"
+            app:layout_constraintStart_toEndOf="@+id/btn_time_end"
+            app:layout_constraintTop_toTopOf="@+id/btn_time_end"
+            tools:text="09.00" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_save_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_700"
+        android:text="@string/simpan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <Button
+        android:id="@+id/btn_participant_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/participant"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_save_popup"
+        app:layout_constraintEnd_toStartOf="@+id/btn_save_popup"
+        app:layout_constraintTop_toTopOf="@+id/btn_save_popup" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_dialog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:progress="200"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
